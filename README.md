@@ -9,4 +9,4 @@ created outline for website with hyperlinks.
 changed header and quotes
 
 [Version 3](https://leanderixd.github.io/jan_tschichold/jan_tschichold-three.html)   
-*12 dec 2020*  
+*12 dec 2020 added footed and biblo*  

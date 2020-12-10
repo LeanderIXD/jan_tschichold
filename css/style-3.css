@@ -1,6 +1,5 @@
 /*--- CSS Reset ---*/
 
-
 * {
     padding: 0;
     margin: 0;
@@ -17,6 +16,11 @@
     --orange: #eb6927;
     --white: #fdfdfd;
     --black: #191815;
+    --blue: #27A9EB;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -41,11 +45,18 @@ cite {
 }
 
 h2 {
+    padding-top: 30px;
     text-align: left;
     font-size: 2.618em;
-    margin-top: 1.5em;
     margin-bottom: .5em;
 }
+
+p {
+    margin-bottom: 1em;
+}
+
+/*---BLOCKQUOTE---*/
+
 
 blockquote {
     font-style: italic;
@@ -61,6 +72,27 @@ blockquote cite {
     color: var(--black);
 }
 
+.blockpenguin {
+    width: 250px;
+    margin-bottom: 2em;
+}
+
+
+/*---LINKS---*/
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--black);
+}
+
+a:hover {
+    color: var(--orange);
+    transition: all 0.3s ease-in-out;
+}
+
 /*---HEADER---*/
 
 
@@ -68,7 +100,7 @@ header h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 5.036em;
-    font-weight: 350;
+    font-weight: 300;
     color: var(--white);
     padding: 1em 0;
     margin: auto;
@@ -81,7 +113,7 @@ header h1 {
         linear-gradient(rgba(235, 105, 39, 0.45),
             rgba(235, 105, 39, 0.45)),
         url('../img/header.png');
-    background-size:cover;
+    background-size: cover;
     width: 100%;
 }
 
@@ -137,6 +169,7 @@ nav a:hover {
 footer {
     text-align: center;
     padding: 3em 0 7em 0;
+    background-color: var(--blue);
 }
 
 .connections li {
@@ -149,5 +182,59 @@ footer {
     transition: all 0.2s ease-in-out;
 }
 
+footer p {
+    font-size: 100%;
+    margin: 1em auto;
+
+}
+
+/*---BIBLIOGRAPHY---*/
+
+
+#bibliography {
+    height: 100%;
+    color: var(--black);
+    background-image: url(../img/biblio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    padding-bottom: 30em;
+
+}
+
+#bibliography h2 {
+    padding-top: 11.75em;
+    margin: auto;
+    padding-left: 2.5em;
+    text-transform: uppercase;
+}
+
+.name {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#bibliography table {
+    font-size: 80%;
+    width: 75%;
+    max-width: 600px;
+    margin: auto;
+    list-style: none;
+}
+
+#bibliography td {
+    padding: .5em;
+}
+
+
 /*---IMAGES---*/
 
+/*---MEDIA---*/
+@media only screen and (min-width: 5760px) {
+    #bibliography {
+        background-size: contain;
+        background-color: var(--blue);
+    }
+
+}

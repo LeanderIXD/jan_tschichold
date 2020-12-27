@@ -1,0 +1,244 @@
+/*--- CSS Reset ---*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    line-height: 1em;
+    font-weight: normal;
+}
+
+
+/*--- MAIN STYLING ---*/
+
+
+:root {
+    --orange: #eb6927;
+    --white: #fdfdfd;
+    --black: #191815;
+    --blue: #27A9EB;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--white);
+    color: #333;
+    font-weight: normal;
+}
+
+
+/*--- TYPOGRAPHY ---*/
+p,
+blockquote,
+h2,
+cite {
+    line-height: 150%;
+    font-size: 1.2em;
+    width: 75%;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+h2 {
+    padding-top: 30px;
+    text-align: left;
+    font-size: 2.618em;
+    margin-bottom: .5em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+/*---BLOCKQUOTE---*/
+
+
+blockquote {
+    font-style: italic;
+    font-size: 1.5em;
+    color: var(--orange);
+    hanging-punctuation: first;
+    text-indent: -0.44em;
+    font-family: 'Libre Baskerville', serif;
+}
+
+blockquote cite {
+    font-size: 0.75em;
+    color: var(--black);
+}
+
+.blockpenguin {
+    width: 250px;
+    margin-bottom: 2em;
+}
+
+
+/*---LINKS---*/
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--black);
+}
+
+a:hover {
+    color: var(--orange);
+    transition: all 0.3s ease-in-out;
+}
+
+/*---HEADER---*/
+
+
+header h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 5.036em;
+    font-weight: 300;
+    color: var(--white);
+    padding: 1em 0;
+    margin: auto;
+    max-width: 700px;
+    letter-spacing: 0.04em;
+}
+
+#orange-background {
+    background-image:
+        linear-gradient(rgba(235, 105, 39, 0.45),
+            rgba(235, 105, 39, 0.45)),
+        url('../img/header.png');
+    background-size: cover;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    margin: 0;
+
+    background-color: var(--orange);
+    padding: 1em 0;
+    font-size: 0.75em;
+}
+
+nav ul {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 20px;
+    background: none;
+}
+
+nav a {
+    color: var(--white);
+}
+
+nav a:visited {
+    color: var(--white);
+}
+
+nav a:hover {
+    border-bottom: none;
+    color: var(--black);
+    transition: all 0.3s ease-in-out;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+
+/*---FOOTER---*/
+
+
+footer {
+    text-align: center;
+    padding: 3em 0 7em 0;
+    background-color: var(--blue);
+}
+
+.connections li {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.connections a:hover svg path {
+    fill: var(--orange);
+    transition: all 0.2s ease-in-out;
+}
+
+footer p {
+    font-size: 100%;
+    margin: 1em auto;
+
+}
+
+/*---BIBLIOGRAPHY---*/
+
+
+#bibliography {
+    height: 100%;
+    color: var(--black);
+    background-image: url(../img/biblio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    padding-bottom: 30em;
+
+}
+
+#bibliography h2 {
+    padding-top: 11.75em;
+    margin: auto;
+    padding-left: 2.5em;
+    text-transform: uppercase;
+}
+
+.name {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#bibliography table {
+    font-size: 80%;
+    width: 75%;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 2em;
+    list-style: none;
+}
+
+#bibliography td {
+    padding: .5em;
+}
+
+/*---IMAGES---*/
+img{
+    display: block;
+    margin: 2em auto 3em auto;
+    max-width: 50%;
+}
+/*---MEDIA---*/
+@media only screen and (min-width: 5760px) {
+    #bibliography {
+        background-size: contain;
+        background-color: var(--blue);
+    }
+
+}

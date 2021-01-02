@@ -188,6 +188,7 @@ footer p {
 
 }
 
+
 /*---BIBLIOGRAPHY---*/
 
 
@@ -233,6 +234,9 @@ img{
     display: block;
     margin: 2em auto 3em auto;
     max-width: 50%;
+}
+.main-body{
+    
 }
 /*---MEDIA---*/
 @media only screen and (min-width: 5760px) {

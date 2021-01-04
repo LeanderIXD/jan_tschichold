@@ -207,6 +207,7 @@ footer p {
 #bibliography h2 {
     padding-top: 11.75em;
     margin: auto;
+    margin-bottom: .5em;
     padding-left: 2.5em;
     text-transform: uppercase;
 }
@@ -238,7 +239,7 @@ img{
 
 .img1{max-width: 560px;}
 .img2{}
-.img3{max-width:700px;width: 53%;}
+.img3{max-width:350px;width: 53%;}
 .img4{}
 .img5{max-width: 400px;}
 
@@ -264,7 +265,7 @@ img{
     background-position: center;
 }
 .b3 h2{
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 .b4{
     background-image: url(../img/4.jpg);
@@ -274,8 +275,8 @@ img{
 }
 /*---CAPTIONS---*/
 .caption{
-    margin-top: -1em;
-    margin-bottom: .5em;
+    margin-top: -2em;
+    margin-bottom: 2em;
     font-size: 70%;
     text-align: center;
     color: grey;
